@@ -12,9 +12,9 @@ body {
 a {
   text-decoration: none;
 }
-.hamburgur{
-    background-color: $primary-color !important;
-    outline: none;
+.hamburgur {
+  background-color: $primary-color !important;
+  outline: none;
 }
 // Home Page Css starts here
 .mainContainer {
@@ -68,10 +68,10 @@ a {
   }
 }
 .hero {
-  height: 84vh;
+  height: 76vh;
   background-color: $main-color;
   &__caption {
-    height: 80vh;
+    height: 72vh;
     color: $text-color;
     @include center(flex-start);
 
@@ -80,58 +80,57 @@ a {
       margin-bottom: 3rem;
       line-height: 120%;
       font-weight: 600;
-      & span{
-          color: $primary-color;
-          text-transform: capitalize;
+      & span {
+        color: $primary-color;
+        text-transform: capitalize;
       }
     }
-    & p{
-        font-size: 1.8rem;
-        margin-bottom: 5rem;
+    & p {
+      font-size: 1.8rem;
+      margin-bottom: 5rem;
     }
-    &-btn{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
- & a{
-     @include btn;
-     &:hover{
-         @include hovereffects
-     }
- }
- & #btn-2{
-     margin-left: 2rem;
-     background-color: rgba(255, 255, 255, 0.5);
-     &:hover{
-         @include hovereffects
-     }
- }
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & a {
+        @include btn;
+        &:hover {
+          @include hovereffects;
+        }
+      }
+      & #btn-2 {
+        margin-left: 2rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        &:hover {
+          @include hovereffects;
+        }
+      }
     }
   }
- &__img{
-    height: 80vh;
-     @include center(center);
-     animation: updown 7s linear infinite alternate;
-     @keyframes updown {
-        0% {
-          transform: scale(0.9);
-        }
-        100% {
-          transform: scale(1);
-        }
+  &__img {
+    height: 72vh;
+    @include center(center);
+    animation: updown 7s linear infinite alternate;
+    @keyframes updown {
+      0% {
+        transform: scale(0.9);
       }
+      100% {
+        transform: scale(1);
+      }
+    }
 
-
-     & img{
-        filter: drop-shadow(0 1.9rem 0.4rem rgba(0, 0, 0, 0.8));
-     }
- }
+    & img {
+      filter: drop-shadow(0 1.9rem 0.4rem rgba(0, 0, 0, 0.8));
+    }
+  }
 }
 
 // Home Page Css ends here
 
 // About Page Css starts here
-.hero2{
+.hero2 {
   // height: 84vh;
   background-color: $text-color;
   &__caption {
@@ -144,100 +143,183 @@ a {
       margin-bottom: 3rem;
       line-height: 120%;
       font-weight: 600;
-      & span{
-          color: $primary-color;
-          text-transform: capitalize;
+      & span {
+        color: $primary-color;
+        text-transform: capitalize;
       }
     }
-    & p{
-        font-size: 1.8rem;
-        margin-bottom: 5rem;
+    & p {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
     }
-    &-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5rem;
- & a{
-     @include btn;
-     width: 85.8%;
-     text-align: center;
-     &:hover{
-         @include hovereffects2
-     }
- }
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      & a {
+        @include btn;
+        width: 85.8%;
+        text-align: center;
+        &:hover {
+          @include hovereffects2;
+        }
+      }
     }
   }
-  &__img{
+  &__img {
     // height: 82vh;
     margin-top: 10rem;
-     @include center(flex-start);
+    @include center(flex-start);
   }
 }
 
 // About Page Css ends here
 
 // service page starts
-.hero3{
+.hero3 {
   background-color: $main-color;
-  & #card{
-    margin-top: 4rem;
+  & #card {
+    margin-top: 3rem;
     margin-bottom: 1rem;
-
-    & .card-body > .card-text{
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    & img {
+      height: 18rem;
+      object-fit: cover;
+    }
+    & .card-body > .card-text {
       font-size: 1.4rem;
     }
   }
 }
 
-
 // service page ends
 
-// Media queries
-@media(max-width:768px){
-    html{
-        font-size: 60%;
-    }
-    .mainContainer{
-        line-height: 5rem;
-        text-align: center;
-        padding-right: 0 2rem;
-        & .navbar-nav{
-            padding-left: 0%;
-            & .nav-item .nav-link{
-                padding-right: 0%;
-            }
+// contact starts
+.hero4 {
+  height: 74.4vh;
+  & .contact__form {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    & .contact__form-input {
+      height: 72vh;
+      @include center(flex-start);
+      & label {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      & input {
+        width: 80%;
+        padding: 1rem 0.5rem;
+        color: $text-color;
+        background: $main-color;
+        margin: 8px 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        outline-color: chocolate;
+        border: none;
+      }
+      & textarea {
+        width: 80%;
+        outline-color: chocolate;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: $text-color;
+        background: $main-color;
+        border: none;
+      }
+      & .hero4-btn{
+        margin-top: 2rem;
+        @include btn;
+        &:hover{
+          @include hovereffects2
         }
+        & a{
+          color: $text-color;
+        }
+      }
     }
-   .navbar .navbar-toggler{
-      color: $text-color;
-   }
-   .hero{
-       height: 92vh;
-   }
-   .hero__caption{
-    height: 92vh;
+  }
+}
 
-   }
-.hero__caption h2{
+// contact ends
+
+// footer
+.footer{
+
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+  $main-color;
+  & h3{
+color: $text-color;
+letter-spacing: 0.2rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    & .fas{
+      color: $primary-color;
+    }
+  }
+}
+// footer
+// Media queries
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .mainContainer {
+    line-height: 5rem;
+    text-align: center;
+    padding-right: 0 2rem;
+    & .navbar-nav {
+      padding-left: 0%;
+      & .nav-item .nav-link {
+        padding-right: 0%;
+      }
+    }
+  }
+  .navbar .navbar-toggler {
+    color: $text-color;
+  }
+  .hero {
+    height: 84.2vh;
+  }
+  .hero__caption {
+    height: 92vh;
+  }
+  .hero__caption h2 {
     line-height: 100%;
     font-size: 5.6rem;
-}
-.hero2__caption h2{
+  }
+  .hero2__caption h2 {
     font-size: 4.5rem;
-}
-    .hero__caption-btn{
-        flex-direction: column;
-        width: 100%;
-    }
-    .hero__caption-btn #btn-2{
-        margin-left: 0rem;
-        margin-top:2rem ;
-    }
-.hero__img{
+  }
+  .hero__caption-btn {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__caption-btn #btn-2 {
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+  .hero__img {
     display: none;
+  }
+  .hero4{
+    height: 84.2vh;
+  }
+  .footer h3{
+    font-size: 2.1rem;
+  }
 }
-}
+
 // @media(max-width:1000px){
 // .hero2{
 //   height: 92.2vh;

@@ -112,12 +112,12 @@ a {
 }
 
 .hero {
-  height: 84vh;
+  height: 76vh;
   background-color: #353846;
 }
 
 .hero__caption {
-  height: 80vh;
+  height: 72vh;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +205,7 @@ a {
 }
 
 .hero__img {
-  height: 80vh;
+  height: 72vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +286,7 @@ a {
 
 .hero2__caption p {
   font-size: 1.8rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .hero2__caption-btn {
@@ -299,7 +299,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .hero2__caption-btn a {
@@ -353,12 +353,138 @@ a {
 }
 
 .hero3 #card {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+  margin-left: 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero3 #card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hero3 #card img {
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero3 #card .card-body > .card-text {
   font-size: 1.4rem;
+}
+
+.hero4 {
+  height: 74.4vh;
+}
+
+.hero4 .contact__form {
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.hero4 .contact__form .contact__form-input {
+  height: 72vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero4 .contact__form .contact__form-input label {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.hero4 .contact__form .contact__form-input input {
+  width: 80%;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background: #353846;
+  margin: 8px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  outline-color: chocolate;
+  border: none;
+}
+
+.hero4 .contact__form .contact__form-input textarea {
+  width: 80%;
+  outline-color: chocolate;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #353846;
+  border: none;
+}
+
+.hero4 .contact__form .contact__form-input .hero4-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 3.2rem;
+  background: #CB7B29;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 4.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero4 .contact__form .contact__form-input .hero4-btn:hover {
+  background-color: #353846;
+  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 11, 0.4);
+          box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 11, 0.4);
+  color: #fff;
+  -webkit-transform: translateY(-0.7rem);
+          transform: translateY(-0.7rem);
+}
+
+.hero4 .contact__form .contact__form-input .hero4-btn a {
+  color: #fff;
+}
+
+.footer {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) #353846;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #353846;
+}
+
+.footer h3 {
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.footer h3 .fas {
+  color: #CB7B29;
 }
 
 @media (max-width: 768px) {
@@ -380,7 +506,7 @@ a {
     color: #fff;
   }
   .hero {
-    height: 92vh;
+    height: 84.2vh;
   }
   .hero__caption {
     height: 92vh;
@@ -405,6 +531,12 @@ a {
   }
   .hero__img {
     display: none;
+  }
+  .hero4 {
+    height: 84.2vh;
+  }
+  .footer h3 {
+    font-size: 2.1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
